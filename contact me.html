@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Ibrahim Asgarov">
+    <meta name="author" content="Ibrahim Asgarov">
+    <title>Contact Me - Ibrahim Asgarov</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="education.html">Education</a> |
+            <a href="weekly schedule.html">Weekly Schedule</a> |
+            <a href="contact.html">Contact Me</a> |
+            <a href="questionnaire.html">Questionnaire</a>
+        </nav>
+    </header>
+
+    <section>
+        <form action="mailto:iasgarov19939@ada.edu.az" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+            <input type="radio" name="contact_method" value="email" checked>Email
+            <input type="radio" name="contact_method" value="phone">Phone<br><br>
+
+            <input type="checkbox" name="subscribe" value="yes">Subscribe to newsletter<br><br>
+
+            <label for="reason">Reason for contact:</label><br>
+            <select id="reason" name="reason">
+                <option value="question">Question</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ibrahim Asgarov</p>
+    </footer>
+</body>
+</html>
+
+
+
