@@ -2,49 +2,60 @@
 <html>
 <head>
     <title>Questionnaire - My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Quick Questionnaire</h1>
+    <header>
+        <h1>Quick Questionnaire</h1>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="education.html">Education</a> |
+            <a href="weekly schedule.html">Weekly Schedule</a> |
+            <a href="contact me.html">Contact Me</a> |
+            <a href="questionnaire.html" class="active">Questionnaire</a> |
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+    
+    <hr>
+    
+    <div class="questionnaire-form">
+        <form action="mailto:iasgarov19939@ada.edu.az" method="post" enctype="text/plain">
+            <p>Did you like my website?</p>
+            <input type="radio" name="Like" value="Yes"> Yes
+            <input type="radio" name="Like" value="No"> No
+            <br><br>
 
-    <a href="home.html">Home</a> |
-    <a href="education.html">Education</a> |
-    <a href="weekly schedule.html">Weekly Schedule</a> |
-    <a href="contact.html">Contact Me</a> |
-    <a href="questionnaire.html">Questionnaire</a>
-    <br><br>
+            <p>Do you want more tutorials?</p>
+            <input type="radio" name="Tutorials" value="Yes"> Yes
+            <input type="radio" name="Tutorials" value="No"> No
+            <br><br>
 
-    <form action="mailto:iasgarov19939@ada.edu.az" method="post" enctype="text/plain">
-        Did you like my website?<br>
-        <input type="radio" name="Like" value="Yes"> Yes
-        <input type="radio" name="Like" value="No"> No
-        <br><br>
+            <p>Topics you like:</p>
+            <input type="checkbox" name="Topics" value="Java"> Java
+            <input type="checkbox" name="Topics" value="WebDev"> Web Dev
+            <input type="checkbox" name="Topics" value="GameDev"> Game Dev
+            <br><br>
 
-        Do you want more tutorials?<br>
-        <input type="radio" name="Tutorials" value="Yes"> Yes
-        <input type="radio" name="Tutorials" value="No"> No
-        <br><br>
+            <label for="rating">Rate my site (1–5):</label> 
+            <select name="Rating" id="rating">
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+            </select>
+            <br><br>
 
-        Topics you like:<br>
-        <input type="checkbox" name="Topics" value="Java"> Java
-        <input type="checkbox" name="Topics" value="WebDev"> Web Dev
-        <input type="checkbox" name="Topics" value="GameDev"> Game Dev
-        <br><br>
+            <label for="feedback">Feedback:</label>
+            <textarea name="Feedback" id="feedback" rows="4" cols="30"></textarea><br><br>
 
-        Rate my site (1–5): 
-        <select name="Rating">
-            <option>1</option><option>2</option><option>3</option>
-            <option>4</option><option>5</option>
-        </select>
-        <br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </form>
+    </div>
 
-        Feedback:<br>
-        <textarea name="Feedback" rows="4" cols="30"></textarea><br><br>
-
-        <input type="submit" value="Send">
-        <input type="reset" value="Clear">
-    </form>
+    <footer>
+        <hr>
+        <p>&copy; 2025 Ibrahim Asgarov</p>
+    </footer>
 </body>
 </html>
-
-
-
