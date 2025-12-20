@@ -167,7 +167,28 @@ nav a.active:hover {
     color: #3498db;
     font-size: 0.8em;
 }
+ 
+.project-photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 50px;
+}
+.youtube-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 10px;
 
+}
+.myprofiles {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 50px;
+}
 /* Media Query for Responsiveness (Mobile) */
 @media (max-width: 768px) {
     .gallery-grid {
